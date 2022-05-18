@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafilotra Resto.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header class="header">
+        <!-- logo -->
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+        <!-- Mobile menu button -->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-line"></span>
+        </label>
+
+        <!-- menu list -->
+        <ul class="navbar">
+            <li class="nav-item"><a href="#">home</a></li>
+            <li class="nav-item"><a href="#">about</a></li>
+            <li class="nav-item"><a href="#">gallery</a></li>
+            <li class="nav-item"><a href="#">team</a></li>
+            <li class="nav-item"><a href="#">contacts</a></li>
+        </ul>
+
+    </header>
+    <!-- header end -->
+
+
+    <!-- home start -->
+
+    <div class="home">
+        <h1>welcome to the palace of burger</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iure accusantium voluptate neque quaerat
+            pariatur itaque adipisci commodi laudantium eum!</h2>
+    </div>
+
+    <!-- home end -->
+
+
+    <!-- about start -->
+
+    <div class="about">
+        <div class="heading">
+            <h1>About us</h1>
+            <h2>Who we are?</h2>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <img src="images/step-1.jpg" alt="">
+                <a href="#">our products</a>
+            </div>
+            <div class="card">
+                <img src="images/step-2.jpg" alt="">
+                <a href="#">delivery</a>
+            </div>
+            <div class="card">
+                <img src="images/step-3.jpg" alt="">
+                <a href="#">payoff</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- about end -->
+
+
+    <!-- explore more start -->
+
+    <div class="explore">
+
+        <h1>Excepteur sint occaecat cupidatat non proident,</br>
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+        <a href="#">explore more</a>
+    </div>
+
+    <!-- explore more end -->
+
+
+    <!-- gallery start -->
+
+    <div class="gallery">
+        <div class="heading">
+            <h1>galleries of success</h1>
+            <h2>Our recent products!</h2>
+        </div>
+
+        <div class="content">
+            <div class="content_1">
+                <img src="images/g-2.jpg" alt="">
+                <img src="images/g-1.jpg" alt="">
+            </div>
+            <div class="content_1">
+                <img src="images/g-4.jpg" alt="">
+                <img src="images/g-3.jpg" alt="">
+            </div>
+            <div class="content_1">
+                <img src="images/g-6.jpg" alt="">
+                <img src="images/g-5.jpg" alt="">
+            </div>
+            <div class="content_1">
+                <img src="images/g-8.jpg" alt="">
+                <img src="images/g-7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- gallery end -->
+
+
+    <!-- subscribe start -->
+
+    <div class="subscribe">
+        <div class="content">
+            <h1>Want to hear more story ?</br>
+                Subscribe to our newsletter</h1>
+            <a href="#">subscribe</a>
+        </div>
+    </div>
+
+    <!-- subscribe end -->
+
+    <!-- team start -->
+
+    <div class="team">
+        <div class="heading">
+            <h1>meet our amazing team</h1>
+            <h2>We are here to work for you and to satisfy your desire!</h2>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <img src="images/pic1.png" alt="">
+                <a href="#">patty white</a>
+            </div>
+            <div class="card">
+                <img src="images/pic2.png" alt="">
+                <a href="#">jim brown</a>
+            </div>
+            <div class="card">
+                <img src="images/pic3.png" alt="">
+                <a href="#">katty lee</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- team end -->
+
+
+    <!-- contact start -->
+
+    <div class="contact">
+        <div class="heading">
+            <h1>our contacts</h1>
+            <h2>Follow us in this journey, want to hear from you!</h2>
+        </div>
+
+        <div class="content">
+            <div class="ico">
+                <img src="images/contact1.png" alt="">
+            </div>
+            <div class="ico">
+                <img src="images/contact3.png" alt="">
+            </div>
+            <div class="ico">
+                <img src="images/contact2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- contact end -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>2022 <a href="#">Mafilotra'</a> - All right reserved.</p>
+    </footer>
+
+
+    <script>
+
+        // ============= navbar scroll animation ==================
+
+        const header = document.querySelector(".header");
+        window.addEventListener("scroll", () => {
+            const scrollN = window.scrollY;
+            if (scrollN > 100) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
